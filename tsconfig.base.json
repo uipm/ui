@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "lib": ["DOM", "ESNext"],
+      "jsx": "react-jsx",
+      "moduleResolution": "node",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "baseUrl": ".",                        // để cấu hình alias paths
+      "paths": {
+        "ui-native": ["packages/ui-native/src"],
+        "ui-native/*": ["packages/ui-native/src/*"],
+        "ui-web": ["packages/ui-web/src"],
+        "ui-web/*": ["packages/ui-web/src/*"]
+      }
+    },
+    "exclude": ["node_modules", "dist"]
+  }
+  

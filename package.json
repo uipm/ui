@@ -1,0 +1,26 @@
+{
+  "name": "uipm-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev:web": "turbo run dev --filter=web",
+    "dev:mobile": "turbo run dev --filter=mobile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@testing-library/react-native": "^13.2.0",
+    "@types/jest": "^30.0.0",
+    "jest": "^29.7.0",
+    "react-test-renderer": "^19.1.0",
+    "ts-jest": "^29.4.0",
+    "turbo": "^2.5.4"
+  }
+}
